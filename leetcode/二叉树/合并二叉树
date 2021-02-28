@@ -1,0 +1,19 @@
+合并的规则有三种：
+1.如果两边节点都为null，则为null；
+2.其中一个为null，则选另一个节点
+3.如果两边街店都不为null，则取相加的值。
+
+闭眼用递归啦
+
+1.深度优先
+var mergeTrees = function(root1, root2) {
+    if(root1 ==null) return root2;
+    if(root2 == null) return root1;
+
+    let merge = new TreeNode(root2.val+root1.val);
+    merge.left = mergeTrees(root1.left,root2.left);
+    merge.right = mergeTrees(root1.right,root2.right);
+
+    return merge;
+
+};
