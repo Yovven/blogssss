@@ -1,0 +1,35 @@
+1.思路：
+通过x和y的异或运算之后，统计出运算结果中1的个数。
+
+2.相关运算符:
+^:异或
+&：并
+<< :向左移位
+>> :向右移位
+
+3.解题
+普通方法：
+var hammingDistance = function(x, y) {
+    let xor = x^y;
+    let distance = 0;
+
+    while(xor != 0){
+        if(xor % 2 ){
+            distance ++;
+        }
+        xor = xor >> 1;
+    }
+    return distance;
+};
+
+
+布莱恩：减少向右移位时一位一位判断的浪费。
+var hammingDistance = function(x, y) {
+    let xor = x^y;
+    let distance = 0;
+    while(xor != 0){
+        distance ++;
+        xor = xor &(xor-1);
+    }
+    return distance;
+};
