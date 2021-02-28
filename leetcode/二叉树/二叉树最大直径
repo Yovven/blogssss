@@ -1,0 +1,14 @@
+思路：经过一个节点最大的路径，是左右子树最大的路径之和，因此找出每个节点max(l,r)保存到一个变量max，不断比较更新这个max即可。
+
+var diameterOfBinaryTree = function(root) {
+   let max = 0;
+   counter(root);
+   return max;
+   function counter(root){
+       if(root==null) return 0;
+       let l = counter(root.left);
+       let r = counter(root.right);
+       max = Math.max(max,l+r);
+       return Math.max(l,r)+1;
+   }
+};
