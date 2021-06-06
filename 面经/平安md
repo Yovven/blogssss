@@ -1,0 +1,14 @@
+一面：
+1.vue mixmin的用法，合并策略，和vue的什么属性用法相似
+2.vue组件的通信方法
+3.vuex的响应式原理
+4.vue的响应式原理，讲到defineProperty，针对对象属性的增加和删除、数组长度和下标赋值处理
+5.es6的模块加载和nodejs模块加载的区别
+6.https与http的区别
+7.浏览器的缓存机制
+8.浏览器监听事件的过程
+9.call,apply,bind的区别
+10.快速排序
+11.项目中微前端的解决方案，除了iframe，qiankun还有什么？
+12.对webpack的了解，webpack的loader和plugin有什么区别，html为什么需要用loader？做过什么优化？
+13.react的$setState()同步异步啥的
