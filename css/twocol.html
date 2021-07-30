@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* flex布局 */
+    /* .box {
+      display: flex;
+    }
+    .left {
+      background-color: red;
+      width: 240px;
+    } 
+     .right {
+      background-color: blue;
+    }
+    */
+
+    /* float布局 */
+    .box {
+      overflow: hidden;
+    }
+
+    .left {
+      background-color: red;
+      width: 240px;
+      float: left;
+      height: 100px;
+    }
+
+    .right {
+      background-color: blue;
+      height: 40px;
+      margin-left: 240px;
+      /* float: left; */
+      /* 如果这里也浮动，right的宽度无法自适应，只会是内容实际的宽 */
+    }
+
+    /* position布局 */
+    /* .box {
+      position: relative;
+    }
+
+    .left {
+      background-color: red;
+      width: 240px;
+      position: absolute;
+      height: 40px;
+      left: 0;
+    }
+
+    .right {
+      background-color: blue;
+      height: 140px;
+      margin-left: 240px;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="col left">left</div>
+    <div class="col right">right</div>
+    <!-- <div class="col ">col3</div> -->
+  </div>
+  <div class="col ">col4</div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      overflow: hidden;
+      padding: 0 210px;
+    }
+
+    .middle {
+      float: left;
+      width: 100%;
+      height: 200px;
+      background-color: lightgray;
+    }
+
+    .left {
+      float: left;
+      background-color: gray;
+      width: 200px;
+      height: 200px;
+      margin-left: -100%;
+      position: relative;
+      left: -210px;
+      /* 
+      
+     */
+    }
+
+    .right {
+      float: left;
+      background-color: gray;
+      width: 200px;
+      height: 200px;
+      margin-left: -200px;
+      position: relative;
+      right: -210px;
+      /* 
+      
+     
+      */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="middle">中间</div>
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+  </div>
+  思路
+  左中右三个元素分别左浮动。
+  中间元素占据第一位置优先渲染，设置该元素 width 为 100%
+  左元素设置左边距为-100%以使得左元素上升一行并且处于最左位置，右元素设置左边距为自身宽度的负值使得右元素上升一行处于最右位置。
+  设置父元素的左右 padding 为左右两个元素留出空间，以展示中间元素内容。
+  设置左右元素为相对定位，左元素的 left 和右元素的 right 为内边距的宽度的负值。
+</body>
+
+</html>

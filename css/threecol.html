@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* flex布局 */
+    /* .box {
+      display: flex;
+    }
+
+    .left {
+      background-color: red;
+      width: 240px;
+    }
+
+    .right {
+      background-color: blue;
+      width: 240px;
+    }
+
+    .middile {
+      background-color: yellow;
+      flex: 1;
+    } */
+
+
+    /* float布局 */
+    .box {
+      overflow: hidden;
+    }
+
+    .left {
+      background-color: red;
+      width: 240px;
+      float: left;
+      height: 100px;
+    }
+
+    .right {
+      background-color: blue;
+      height: 40px;
+      float: right;
+      width: 240px;
+    }
+
+    .middle {
+      background-color: yellow;
+    }
+
+
+    /* position布局 */
+    /* .box {
+      position: relative;
+    }
+
+    .left {
+      background-color: red;
+      width: 240px;
+      position: absolute;
+      height: 40px;
+      left: 0px;
+      top:0;
+    }
+
+    .right {
+      background-color: blue;
+      height: 140px;
+      position: absolute;
+      width: 240px;
+      right: 0px;
+      top:0;
+    }
+
+    .middle {
+      margin: 0px 240px;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="col left">left</div>
+    <div class="col right">right</div>
+    <div class="col middle">middle</div>
+  </div>
+  <div class="col ">col4</div>
+</body>
+
+</html>
